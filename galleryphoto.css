@@ -12,28 +12,28 @@
             "d e f"
             "g h i";}
 
-.photopackage1{
+.Jiangnan1{
   grid-area: a;
 }
 
-.photopackage2{
+.Jiangnan2{
     grid-area: b;
 }
 
-.photopackage3 {
+.Jiangnan3 {
     grid-area: c;
 }
 
-.photopackage4 {
+.Jiangnan4 {
   grid-area: d;
 }
 
 
-.photopackage5 {
+.Jiangnan5 {
   grid-area: e;
 }
 
-.photopackage6 {
+.Jiangnan6 {
     grid-area: f;
 }
 
