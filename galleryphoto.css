@@ -12,28 +12,28 @@
             "d e f"
             "g h i";}
 
-.Jiangnan1{
+.jiangnan1{
   grid-area: a;
 }
 
-.Jiangnan2{
+.jiangnan2{
     grid-area: b;
 }
 
-.Jiangnan3 {
+.jiangnan3 {
     grid-area: c;
 }
 
-.Jiangnan4 {
+.jiangnan4 {
   grid-area: d;
 }
 
 
-.Jiangnan5 {
+.jiangnan5 {
   grid-area: e;
 }
 
-.Jiangnan6 {
+.jiangnan6 {
     grid-area: f;
 }
 
