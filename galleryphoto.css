@@ -1,4 +1,4 @@
-.jiangnan {
+.jiangnanstory {
   align-items: stretch;
   margin: 10;
   padding: 0;
@@ -8,8 +8,13 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
-            "a b c"
-            "d e f"
+            "a a a"
+            ". b b"
+            ". b b"
+            "f f f"
+            ". d d"
+            "e e ."
+            "c c c"
           ;}
 
 .jiangnan1{
