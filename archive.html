@@ -5,27 +5,32 @@
 <head>
   <title>Filling the Gap</title>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./navStyle.css">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </head>
 
 <body>
 
   <!-- Top Navigation Menu -->
-  <div class="topnav">
-    <a class="home" href="index.html">Filling the Gap</a>
-    <div class="dropdown">
-      <button class="dropbtn">
-        <div class="hamburger_icon"></div>
-        <div class="hamburger_icon"></div>
-        <div class="hamburger_icon"></div>
-      </button>
-      <!-- Navigation links (hidden by default) -->
-      <div class="dropdown-content">
-        <a href="gallery.html">Gallery</a>
-        <a href="archive.html">Archive</a>
-        <a href="about.html">About</a>
-      </div>
-    </div>
+  <div class="topnav" id="myTopnav">
+    <label>Archive</label>
+    <a href="index.html">Gallery</a>
+    <a href="archive.html" class="selected">Archive</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 
   <div class="container">
@@ -38,8 +43,11 @@
     </div>
 
     <p><img src="midmissouri.png"></p>
-    <p>On this page, we will add some interactive functions attached to the map, which indicates the coverage of Missourian. Dots will be pined on the map representing where the photo stories locate. Users can expect to explore our archive by this locational search tool.</p>
-    <p>Some other categories will be also added to organize the archive, and those items are roughly planned to be listed as bullets.</p>
+    <p>On this page, we will add some interactive functions attached to the map, which indicates the coverage of
+      Missourian. Dots will be pined on the map representing where the photo stories locate. Users can expect to explore
+      our archive by this locational search tool.</p>
+    <p>Some other categories will be also added to organize the archive, and those items are roughly planned to be
+      listed as bullets.</p>
     <ul>
       <li>Example</li>
       <li>Example</li>
@@ -48,30 +56,31 @@
       <li>Example</li>
     </ul>
 
-      <div id="botnav">
-        <div class="botsec">
-          <h3>Sections</h3>
-          <hr>
-          <p><a href="index.html">Homepage</a></p>
-          <p><a href="gallery.html">Gallery</a></p>
-          <p><a href="archive.html">Archive</a></p>
-          <p><a href="about.html">About</a></p>
-        </div>
-        <br>
-        <div class="botsec">
-          <h3>Contact Information</h3>
-          <hr>
-          <h1>Missourian</h1>
-          <p>columbiamissourian.com</p>
-          <p>221 South 8th Street</p>
-          <p>Columbia, MO 65201</p>
-          <p>Phone: 573-882-5700</p>
-          <p>Email: <a href="mailto:news@columbiamissourian.com">news@columbiamissourian.com</a></p>
+    <div id="botnav">
+      <div class="botsec">
+        <h3>Sections</h3>
+        <hr>
+        <p><a href="index.html">Homepage</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="archive.html">Archive</a></p>
+        <p><a href="about.html">About</a></p>
       </div>
+      <br>
+      <div class="botsec">
+        <h3>Contact Information</h3>
+        <hr>
+        <h1>Missourian</h1>
+        <p>columbiamissourian.com</p>
+        <p>221 South 8th Street</p>
+        <p>Columbia, MO 65201</p>
+        <p>Phone: 573-882-5700</p>
+        <p>Email: <a href="mailto:news@columbiamissourian.com">news@columbiamissourian.com</a></p>
       </div>
-      <div id="footer">
-        <p> Copyright &copy; 2019 <a href="columbiamissourian.com">The Columbia Missourian</a>, 221 South 8th Street Columbia, MO | <a href="">Term of Use</a> | <a href="">Privacy Policy</a></p>
-      </div>
+    </div>
+    <div id="footer">
+      <p> Copyright &copy; 2019 <a href="columbiamissourian.com">The Columbia Missourian</a>, 221 South 8th Street
+        Columbia, MO | <a href="">Term of Use</a> | <a href="">Privacy Policy</a></p>
+    </div>
 
   </div>
 
