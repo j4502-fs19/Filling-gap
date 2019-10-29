@@ -511,3 +511,22 @@ img{
       }
 
 }
+
+
+.body {
+  text-align: center;
+}
+
+/* Style the search box inside the navigation bar */
+.searchBar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 17px;
+  width: 20em;
+}
+
+.searchBar button {
+  font-size: 1.5em;
+  border: none;
+}
