@@ -434,11 +434,6 @@ img{
 
 
 
-/* .body {
-  text-align: center;
-}
-
-
 /* Style the search box inside the navigation bar */
 .searchBar input[type=text] {
   padding: 6px;
@@ -455,6 +450,8 @@ img{
 
 .body{
   text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 .map {
