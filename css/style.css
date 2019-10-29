@@ -351,9 +351,10 @@ img{
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
 
 .jiangnanstory {
-  align-items:flex-ends;
+  align-items: flex-end;
   margin: 10;
   padding: 0;
   border-radius: 5px;
@@ -397,7 +398,7 @@ img{
     grid-area: f;
 }
 
-/*@media screen and (min-width:600px)
+/* @media screen and (min-width:600px)
 {
   .jiangnan1
   {
@@ -429,7 +430,79 @@ img{
     grid-column:1/4;
     grid-row:4;
   }
+} */
+
+
+
+/* .body {
+  text-align: center;
 }
+
+
+/* Style the search box inside the navigation bar */
+.searchBar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 17px;
+  width: 20em;
+}
+
+.searchBar button {
+  font-size: 1.5em;
+  border: none;
+}
+
+.body{
+  text-align: center;
+}
+
+.map {
+  width: 60%;
+  max-width: 800px;
+  text-align: center;
+  padding:0 20%;
+}
+
+.archivetext ul li{
+  list-style-type: square;
+}
+
+
+.categories {
+  display: flex;
+}
+
+.catecolumn {
+  padding: 0 10%;
+  flex: 30%;
+}
+
+.contact {
+  display: flex;
+  padding-top: 2em;
+}
+
+.contactcolumn {
+  padding: 0 5%;
+  flex: 40%;
+}
+
+/* #logo{
+  width: 10%;
+  height: 10%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 0;
+} */
+
+.footertext {
+  text-align: center;
+}
+
+
 
 /*iPhone 6 and iPhone 6+ portrait and landscape*/
 @media only screen
@@ -545,71 +618,22 @@ img{
   padding: 0;
 }
 
-}
-
-
-.body {
-  text-align: center;
-}
-
-/* Style the search box inside the navigation bar */
-.searchBar input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 5px;
-  font-size: 17px;
-  width: 20em;
-}
-
-.searchBar button {
-  font-size: 1.5em;
-  border: none;
-}
-
-.map {
-  width: 60%;
-  max-width: 800px;
-  text-align: center;
-  padding:0 20%;
-}
-
-.archivetext ul li{
-  list-style-type: square;
+.categories {
+  display: flex;
 }
 
 .catecolumn {
-  padding-left: 10%;
-  float: left;
-  width: 30%;
-}
-
-/* Clear floats after the columns */
-.categories:after {
-  content: "";
-  display: table;
-  clear: both;
+  flex: 100%;
 }
 
 .contact {
-  display: flex;
+  display: block;
   padding-top: 2em;
 }
 
-.contactcolumn {
+/* .contactcolumn {
   padding: 0 5%;
   flex: 40%;
-}
-
-/* #logo{
-  width: 10%;
-  height: 10%;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em 0;
 } */
 
-.footertext {
-  text-align: center;
 }
