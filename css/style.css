@@ -342,7 +342,7 @@ img{
 
 
 .jiangnanstory {
-  align-items: stretch;
+  align-items:flex-ends;
   margin: 10;
   padding: 0;
   border-radius: 5px;
