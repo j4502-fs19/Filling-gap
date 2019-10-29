@@ -506,4 +506,8 @@ img{
           grid-area: i;
         }
 
+      .text {
+        font-size: 3em;
+      }
+
 }
