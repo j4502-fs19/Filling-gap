@@ -413,6 +413,35 @@ img{
     grid-area: f;
 }
 
+.protest {
+  align-items: stretch;
+  margin: 10;
+  padding: 0;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+            "a a a"
+            ". b b"
+            ". b b"
+            "f f f"
+            ". d d"
+          ;}
+.protest1{
+  grid-area: a;
+}
+.protest2{
+    grid-area: b;
+}
+.protest3 {
+    grid-area: c;
+}
+.protest4 {
+  grid-area: d;
+}
+
 /* @media screen and (min-width:600px)
 {
   .jiangnan1
