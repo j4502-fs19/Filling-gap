@@ -6,7 +6,7 @@
 h1 {
     font-size: 2em;
     font-family: 'Source Serif Pro', serif;
-    padding-top: 10%
+    margin-top: 50px;
 }
 
 h2 {
@@ -59,6 +59,7 @@ img{
 }
 
 #botnav {
+  margin-top: 100px;
   background-color: #2767a8;
   color: white;
   padding-top: 2%;
@@ -72,6 +73,7 @@ img{
   font-size: 0.8em;
   line-height: 0.8em;
 }
+
 
 #footer p {
   margin: 5% 0;
@@ -124,9 +126,153 @@ img{
   grid-row: 2;
 }
 
+/*Top stories image hover*/
+
+.comoleft, .comoright1, .comoright2, .photopackage1 {
+  position: relative;
+}
+
+.photopackage2, .photopackage3, .photopackage4, .photopackage5, .photopackage6, .photopackage7 {
+  position: relative;
+}
+
+.photopackage8, .photopackage9 {
+  position: relative;
+}
+
+.homeimages {
+  justify-content: center;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.text {
+  background-color: #6495ED;
+  display: block;
+  color: white;
+  font-size: 1.5em;
+  padding: 16px 32px;
+}
+
+.comoleft:hover .homeimages {
+  opacity: 0.3;
+}
+
+.comoleft:hover .middle {
+  opacity: 1;
+}
+
+
+.comoright1:hover .homeimages {
+  opacity: 0.3;
+}
+
+.comoright1:hover .middle {
+  opacity: 1;
+}
+
+.comoright2:hover .homeimages {
+  opacity: 0.3;
+}
+
+.comoright2:hover .middle {
+  opacity: 1;
+}
+
+.photopackage1:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage1:hover .middle {
+  opacity: 1;
+}
+
+.photopackage2:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage2:hover .middle {
+  opacity: 1;
+}
+
+.photopackage3:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage3:hover .middle {
+  opacity: 1;
+}
+
+
+.photopackage4:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage4:hover .middle {
+  opacity: 1;
+}
+
+
+.photopackage5:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage5:hover .middle {
+  opacity: 1;
+}
+
+
+.photopackage6:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage6:hover .middle {
+  opacity: 1;
+}
+
+.photopackage7:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage7:hover .middle {
+  opacity: 1;
+}
+
+.photopackage8:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage8:hover .middle {
+  opacity: 1;
+}
+
+.photopackage9:hover .homeimages {
+  opacity: 0.3;
+}
+
+.photopackage9:hover .middle {
+  opacity: 1;
+}
+
+
 
 /*ad*/
 .ad {
+  opacity: 0.7;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
