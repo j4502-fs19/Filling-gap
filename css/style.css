@@ -54,9 +54,6 @@ img{
   text-align: center;
 }
 
-.photopackage h2{
-  align-self: center;
-}
 
 #botnav {
   margin-top: 100px;
@@ -105,9 +102,8 @@ img{
 
 
 .como li {
-    background-color: #B0C4DE;
-    border: 1px solid #ccc;
-    padding: 10px;
+    background-color: black;
+    border: 0.5px solid #ccc;
     border-radius: 5px;
 }
 
@@ -161,7 +157,7 @@ img{
 
 .text {
   display: block;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 1.5em;
   padding: 16px 32px;
@@ -305,39 +301,48 @@ img{
             "g h i";}
 
 .photopackage1{
+    background-color: black;
   grid-area: a;
 }
 
 .photopackage2{
+    background-color: black;
     grid-area: b;
 }
 
 .photopackage3 {
+    background-color: black;
     grid-area: c;
 }
 
 .photopackage4 {
+    background-color: black;
   grid-area: d;
 }
 
 
 .photopackage5 {
+    background-color: black;
   grid-area: e;
 }
 
 .photopackage6 {
+    background-color: black;
     grid-area: f;
 }
 
 .photopackage7 {
+    background-color: black;
     grid-area: g;
 }
 
 .photopackage8 {
+    background-color: black;
   grid-area: h;
 }
 
 .photopackage9 {
+    background-color: black;
   grid-area: i;
 }
 
