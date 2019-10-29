@@ -342,14 +342,24 @@ img{
   grid-area: i;
 }
 
+/*jiangnan*/
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
 .jiangnanstory {
-  align-items: stretch;
+  align-items:flex-ends;
   margin: 10;
   padding: 0;
   border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
@@ -387,7 +397,7 @@ img{
     grid-area: f;
 }
 
-@media screen and (min-width:600px)
+/*@media screen and (min-width:600px)
 {
   .jiangnan1
   {
