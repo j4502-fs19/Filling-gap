@@ -505,9 +505,9 @@ margin-bottom: 8%;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
-            "a a a"
-            ". b b"
-            ". b b"
+            "a b"
+            "a b b"
+            "a b b"
             "f f f"
             ". d d"
           ;}
