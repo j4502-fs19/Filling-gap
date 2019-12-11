@@ -51,7 +51,7 @@ img{
 
 
 .botnav {
-  margin-top: 100px;
+  margin-top: 20%;
   background-color: #ddd;
   color: black;
   padding-top: 2%;
@@ -364,11 +364,10 @@ img{
 
 /* Position the image container (needed to position the left and right arrows) */
 .container2 {
-  height: 50%;
+  height: 60%;
   width: 50%;
-  padding-top: 50px;
-  margin-left: 8%;
-  margin-right: 10%;
+  margin-top: 10%;
+  margin-left: 26%;
   align-content: center;
 }
 
@@ -384,14 +383,13 @@ img{
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -30px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -402,7 +400,7 @@ img{
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 100;
   border-radius: 3px 0 0 3px;
 }
 
@@ -450,8 +448,6 @@ img{
 .active, .demo:hover {
   opacity: 1;
 }
-
-
 
 
 
