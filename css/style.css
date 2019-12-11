@@ -4,7 +4,8 @@
 }
 
 h1 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 3em;
     font-family: 'PT Serif', serif;
     margin-top: 50px;
 }
@@ -18,6 +19,16 @@ h3{
     font-size: 1.333em;
     font-family: 'PT Serif', serif;
 }
+
+h4 {
+  text-align: center;
+  font-size: 1em;
+  font-family:'Signika', sans-serif;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 
 p {
     font-size: 100%;
@@ -364,10 +375,10 @@ img{
 
 /* Position the image container (needed to position the left and right arrows) */
 .container2 {
-  height: 60%;
-  width: 50%;
-  margin-top: 10%;
-  margin-left: 26%;
+  height: 68%;
+  width: 55%;
+  margin-top: 6%;
+  margin-left: 24%;
   align-content: center;
 }
 
@@ -401,7 +412,7 @@ img{
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 2px 16px;
+  padding: 4px 16px;
   color: white;
 }
 
@@ -414,7 +425,7 @@ img{
 /* Six columns side by side */
 .column {
   float: left;
-  width: 120px;
+  width: 16.5%;
   height: 100px;
 }
 
@@ -433,9 +444,10 @@ img{
 
 .comment {
 align-content:center;
-margin-top: 20%;
+margin-top: 15%;
 margin-left: 26%;
 margin-right: 26%;
+margin-bottom: 8%;
 }
 
 /* Chat containers */
@@ -469,13 +481,13 @@ margin-right: 26%;
 /* Style time text */
 .time-right {
   float: right;
-  color: #aaa;
+  color: #black;
 }
 
 /* Style time text */
 .time-left {
   float: left;
-  color: #999;
+  color: #black;
 }
 
 
