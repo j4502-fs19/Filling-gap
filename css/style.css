@@ -132,9 +132,7 @@ img{
 /*social icon*/
 .social{
 margin-top: 15%;
-margin-left: 90%;
-margin-right: 10%;
-margin-bottom: 5%;
+margin-left: 70%;
 }
 
 
@@ -172,17 +170,6 @@ margin-bottom: 5%;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -498,7 +485,7 @@ margin-bottom: 5%;
 
 .comment {
 align-content:center;
-margin-top: 15%;
+margin-top: 5%;
 margin-left: 26%;
 margin-right: 26%;
 margin-bottom: 8%;
