@@ -92,9 +92,8 @@ img{
 }
 
 .footerlogo {
-  max-width: 180px;
   width: 180px;
-  float: right;
+  padding-left: 50%;
 }
 
 
@@ -132,6 +131,52 @@ img{
   display: flex;
   display: grid;
 }
+
+/*social icon*/
+.social{
+margin-top: 15%;
+margin-left: 70%;
+}
+
+
+.fa {
+  padding: 8px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #E11584;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
 
 /*Top Stoires*/
 .columbiaphoto{
@@ -387,11 +432,6 @@ img{
 }
 
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -438,7 +478,7 @@ img{
   opacity: 0.6;
 }
 
-.active, .demo:hover {
+.demo:hover {
   opacity: 1;
 }
 
@@ -448,7 +488,7 @@ img{
 
 .comment {
 align-content:center;
-margin-top: 15%;
+margin-top: 5%;
 margin-left: 26%;
 margin-right: 26%;
 margin-bottom: 8%;
@@ -485,13 +525,13 @@ margin-bottom: 8%;
 /* Style time text */
 .time-right {
   float: right;
-  color: #black;
+  color: black;
 }
 
 /* Style time text */
 .time-left {
-  float: left;
-  color: #black;
+  float: right;
+  color: black;
 }
 
 
@@ -563,6 +603,7 @@ margin-bottom: 8%;
 
 
 
+
 /* Style the search box inside the navigation bar */
 .searchBar input[type=text] {
   padding: 6px;
@@ -587,7 +628,7 @@ margin-bottom: 8%;
   width: 40%;
   max-width: 800px;
   text-align: center;
-  padding: 0 auto;
+  padding:0 30%;
 }
 
 .archivetext ul li{
