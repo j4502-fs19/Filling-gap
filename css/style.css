@@ -4,7 +4,8 @@
 }
 
 h1 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 3em;
     font-family: 'PT Serif', serif;
     margin-top: 50px;
 }
@@ -18,6 +19,16 @@ h3{
     font-size: 1.333em;
     font-family: 'PT Serif', serif;
 }
+
+h4 {
+  text-align: center;
+  font-size: 1em;
+  font-family:'Signika', sans-serif;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 
 p {
     font-size: 100%;
@@ -51,7 +62,7 @@ img{
 
 
 .botnav {
-  margin-top: 100px;
+  margin-top: 20%;
   background-color: #ddd;
   color: black;
   padding-top: 2%;
@@ -348,7 +359,7 @@ img{
 
 .photopackage8 {
     background-color: black;
-  grid-area: h;
+    grid-area: h;
 }
 
 .photopackage9 {
@@ -356,62 +367,133 @@ img{
   grid-area: i;
 }
 
+
 /*jiangnan*/
-
-.full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+* {
+  box-sizing: border-box;
 }
 
-.jiangnanstory {
-  align-items: flex-end;
-  margin: 10;
-  padding: 0;
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  height: 68%;
+  width: 55%;
+  margin-top: 6%;
+  margin-left: 24%;
+  align-content: center;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 4px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.5%;
+  height: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+
+
+/*comment section*/
+
+.comment {
+align-content:center;
+margin-top: 15%;
+margin-left: 26%;
+margin-right: 26%;
+margin-bottom: 8%;
+}
+
+/* Chat containers */
+.containerlighter, .containerdarker {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
   border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-template-areas:
-            "a a a"
-            ". b b"
-            ". b b"
-            "f f f"
-            ". d d"
-            "e e ."
-            "c c c"
-          ;}
-
-.jiangnan1{
-  grid-area: a;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-.jiangnan2{
-    grid-area: b;
+/* Darker chat container */
+.containerdarker {
+  border-color: #ccc;
+  background-color: #ddd;
 }
 
-.jiangnan3 {
-    grid-area: c;
+/* Clear floats */
+.containerlighter::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.jiangnan4 {
-  grid-area: d;
+.containerdarker::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #black;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #black;
 }
 
 
-.jiangnan5 {
-  grid-area: e;
-}
 
-.jiangnan6 {
-    grid-area: f;
-}
-/*
+/*proest gallery page*/
+
 .protest {
   align-items: stretch;
   margin: 10;
