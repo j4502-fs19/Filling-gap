@@ -377,7 +377,7 @@ img{
 .container2 {
   height: 68%;
   width: 55%;
-  margin-top: 8%;
+  margin-top: 6%;
   margin-left: 24%;
   align-content: center;
 }
@@ -444,9 +444,10 @@ img{
 
 .comment {
 align-content:center;
-margin-top: 20%;
+margin-top: 15%;
 margin-left: 26%;
 margin-right: 26%;
+margin-bottom: 8%;
 }
 
 /* Chat containers */
@@ -480,13 +481,13 @@ margin-right: 26%;
 /* Style time text */
 .time-right {
   float: right;
-  color: #aaa;
+  color: #black;
 }
 
 /* Style time text */
 .time-left {
   float: left;
-  color: #999;
+  color: #black;
 }
 
 
