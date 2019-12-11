@@ -62,7 +62,7 @@ img{
 
 
 .botnav {
-  margin-top: 20%;
+  margin-top: 14%;
   background-color: #ddd;
   color: black;
   padding-top: 2%;
@@ -169,6 +169,58 @@ margin-left: 70%;
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*contact us*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin-right: 3%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.contactus {
+  margin-top: 8%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+
+/* Create two columns that float next to eachother */
+.columnus {
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 3px;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
