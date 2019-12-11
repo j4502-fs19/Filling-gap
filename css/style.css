@@ -659,12 +659,21 @@ margin-bottom: 8%;
 
 
 /* Style the search box inside the navigation bar */
-.searchBar input[type=text] {
+.searchBar{
   padding: 6px;
   margin-top: 8px;
   margin-right: 5px;
   font-size: 17px;
-  width: 20em;
+  width: 100%;
+}
+
+#search {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
 }
 
 .searchBar button {
