@@ -92,8 +92,9 @@ img{
 }
 
 .footerlogo {
+  max-width: 180px;
   width: 180px;
-  padding-left: 50%;
+  float: right;
 }
 
 
@@ -583,7 +584,7 @@ margin-bottom: 8%;
   width: 40%;
   max-width: 800px;
   text-align: center;
-  padding:0 30%;
+  padding: 0 auto;
 }
 
 .archivetext ul li{
