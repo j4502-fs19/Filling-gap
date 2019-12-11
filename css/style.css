@@ -62,11 +62,7 @@ img{
 
 
 .botnav {
-<<<<<<< HEAD
-  margin-top: 14%;
-=======
   margin-top: 3em;
->>>>>>> 05694d6898d4554b335cdaccafed117313d3075e
   background-color: #ddd;
   color: black;
   padding-top: 2%;
@@ -194,13 +190,14 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
+  margin-top: 0.5em;
   background-color: #4CAF50;
   color: white;
-  padding: 20px 20px;
+  padding: 1em 1em;
   border: none;
   cursor: pointer;
   float: right;
-  margin-right: 3%;
+  margin-right: 0 auto;
 }
 
 input[type=submit]:hover {
@@ -209,10 +206,11 @@ input[type=submit]:hover {
 
 /* Style the container/contact section */
 .contactus {
-  margin-top: 8%;
+  margin-top: 2em;
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 5px;
+  padding: 1em;
+  padding-bottom: 1.5em;
 }
 
 /* Create two columns that float next to eachother */
