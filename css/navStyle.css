@@ -8,7 +8,20 @@
   top: 0; /* Position the navbar at the top of the page */
   left: 0; /* Position the navbar at the most left of the page */
   width: 100%; /* Full width */
+  height: 60px;
   z-index: 9999;
+}
+
+.topnav img {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  max-width: 25%;
+  max-height: 70%;
+  height: auto;
+  width: auto;
+  padding-top: 10px;
+  padding-left: 4px;
 }
 
 .topnav label {
@@ -17,7 +30,7 @@
 
 .topnav a {
   display: inline-block;
-  padding: 14px 16px;
+  padding: 20px 16px;
 
   text-decoration: none;
   color: #484848;
@@ -26,12 +39,14 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
+  height: 80px;
   background-color: #ddd;
   color: black;
 }
 
 /* Add an selected class to highlight the current page */
 .topnav a.selected {
+  height: 80px;
   background-color: #ddd;
   color: black;
 }
@@ -44,10 +59,33 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  .topnav {
+    height: auto;
+  }
+
+  .topnav a:hover {
+    height: auto;
+
+  }
+
+  .topnav a.selected {
+    height: auto;
+
+  }
+
   .topnav label {
     display: inline-block;
     padding: 14px 16px;
     text-align: center;
+  }
+
+  .topnav img {
+    left: 30%;
+    max-width: 40%;
+    height: auto;
+    width: auto;
+    padding-top: 10px;
+    padding-left: auto;
   }
 
   .topnav a {
@@ -79,7 +117,7 @@
   }
 
   .topnav.responsive label {
-    padding-right: 65px;
+    margin-top: 32px;
   }
 }
 
@@ -91,7 +129,8 @@
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
   .topnav {
     overflow: hidden;
-    text-align: left;
+    /* text-align: center; */
+    height: 120px;
   }
   .topnav label {
     display: inline-block;
@@ -99,6 +138,15 @@
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 42%;
+  }
+
+  .topnav img {
+    left: 32%;
+    max-width: 40%;
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+    padding-left: auto;
   }
 
   .topnav a {
@@ -113,6 +161,7 @@
 
   .topnav.responsive {
     position: fixed;
+    height: auto;
   }
   .topnav.responsive a.icon {
     position: absolute;
@@ -124,6 +173,11 @@
     display: block;
     text-align: center;
   }
+
+  .topnav.responsive label {
+    margin-top: 67px;
+  }
+
 }
 
 
