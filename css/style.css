@@ -4,24 +4,35 @@
 }
 
 h1 {
-    font-size: 2em;
-    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'PT Serif', serif;
     margin-top: 50px;
 }
 
 h2 {
     font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Signika', sans-serif;
 }
 
 h3{
     font-size: 1.333em;
-    font-family: 'Domine', serif;
+    font-family: 'PT Serif', serif;
 }
+
+h4 {
+  text-align: center;
+  font-size: 1em;
+  font-family:'Signika', sans-serif;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 
 p {
     font-size: 100%;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'PT Serif', serif;
 }
 
 .container {
@@ -32,13 +43,13 @@ p {
     align-content: center;
 }
 
-.botsec a:link, .botsec a:visited {
-	color: white;
+.botcolumn a:link, .botcolumn a:visited {
+	color: black;
   text-decoration: none;
 }
 
 .photopackage a:link, .photopackage a:visited {
-	color: #4682B4;
+	color: black;
   text-decoration: none;
 }
 
@@ -50,25 +61,45 @@ img{
 }
 
 
-#botnav {
-  margin-top: 100px;
-  background-color: #2767a8;
-  color: white;
+.botnav {
+  margin-top: 20%;
+  background-color: #ddd;
+  color: black;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 8%;
   padding-right: 8%;
+  display: flex;
 }
 
-#botnav p {
-  font-family: Arial;
-  font-size: 0.8em;
-  line-height: 0.8em;
+.botnav p {
+  font-family: 'PT Serif', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.botcolumn {
+  flex: 40%;
+  padding: 0 5%;
+}
+
+#logo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  padding: 5%;
+}
+
+.footerlogo {
+  width: 180px;
+  padding-left: 50%;
 }
 
 
 #footer p {
-  margin: 5% 0;
+  /* padding-top: 1em;
+  margin: 5% 0; */
   color: gray;
   font-family: Arial;
   font-size: 0.8em;
@@ -78,6 +109,20 @@ img{
 	color: gray;
 }
 
+.aboutheader h1{
+  font-family: 'PT Serif', sans-serif;
+}
+
+
+
+.contactcolumn a:link, .contactcolumn a:visited {
+  	color: black;
+    text-decoration: none;
+  }
+.contactcolumn a:hover, .contactcolumn a:active {
+    	color: black;
+      text-decoration: underline;
+    }
 
 .container {
   display: flex;
@@ -93,6 +138,7 @@ img{
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
 }
 
 
@@ -156,6 +202,7 @@ img{
   font-weight: bold;
   font-size: 1.5em;
   padding: 16px 32px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .comoleft:hover .homeimages {
@@ -259,29 +306,9 @@ img{
 }
 
 
-
-/*ad*/
-.ad {
-  opacity: 0.7;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.advertise {
-  font-size: 4em;
-	color: white;
-	padding: 15px;
-	background: lightblue;
-	border-radius: 3px;
-}
-
-
 /*Gallery*/
 
 .photopackage {
-  align-items: stretch;
   margin: 10;
   padding: 0;
   border-radius: 5px;
@@ -332,7 +359,7 @@ img{
 
 .photopackage8 {
     background-color: black;
-  grid-area: h;
+    grid-area: h;
 }
 
 .photopackage9 {
@@ -341,7 +368,133 @@ img{
 }
 
 
-.jiangnanstory {
+/*jiangnan*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  height: 68%;
+  width: 55%;
+  margin-top: 6%;
+  margin-left: 24%;
+  align-content: center;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 4px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.5%;
+  height: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+
+
+/*comment section*/
+
+.comment {
+align-content:center;
+margin-top: 15%;
+margin-left: 26%;
+margin-right: 26%;
+margin-bottom: 8%;
+}
+
+/* Chat containers */
+.containerlighter, .containerdarker {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.containerdarker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.containerlighter::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerdarker::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #black;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #black;
+}
+
+
+
+/*proest gallery page*/
+
+.protest {
   align-items: stretch;
   margin: 10;
   padding: 0;
@@ -356,44 +509,253 @@ img{
             "a b b"
             "f f f"
             ". d d"
-            "e e ."
-            "c c c"
           ;}
-
-.jiangnan1{
+.protest1{
   grid-area: a;
 }
-
-.jiangnan2{
+.protest2{
     grid-area: b;
 }
-
-.jiangnan3 {
+.protest3 {
     grid-area: c;
 }
-
-.jiangnan4 {
+.protest4 {
   grid-area: d;
+} */
+
+/* @media screen and (min-width:600px)
+{
+  .jiangnan1
+  {
+    grid-column:1/3;
+    grid-row:1;
+  }
+  .jiangnan2{
+    grid-column:3;
+    grid-row:1;
+  }
+  .jiangnan3{
+    grid-column:1;
+    grid-row:2/3;
+  }
+}
+
+@media screen and (min-width:800px)
+{
+  .jiangnan4
+  {
+    grid-column:2/4;
+    grid-row:2;
+  }
+  .jiangnan5{
+    grid-column:2/4;
+    grid-row:3;
+  }
+  .jiangnan6{
+    grid-column:1/4;
+    grid-row:4;
+  }
+} */
+
+
+
+/* Style the search box inside the navigation bar */
+.searchBar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-size: 17px;
+  width: 20em;
+}
+
+.searchBar button {
+  font-size: 1.5em;
+  border: none;
+}
+
+.body{
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.map {
+  width: 40%;
+  max-width: 800px;
+  text-align: center;
+  padding:0 30%;
+}
+
+.archivetext ul li{
+  list-style-type: square;
 }
 
 
-.jiangnan5 {
-  grid-area: e;
+.categories {
+  display: flex;
 }
 
-.jiangnan6 {
-    grid-area: f;
+.catecolumn {
+  padding: 0 10%;
+  flex: 30%;
 }
+
+.contact {
+  display: flex;
+  padding-top: 2em;
+}
+
+.contactcolumn {
+  padding: 0 5%;
+  flex: 40%;
+}
+
+/* #logo{
+  width: 10%;
+  height: 10%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 0;
+} */
+
+.footertext {
+  text-align: center;
+}
+
 
 
 /*iPhone 6 and iPhone 6+ portrait and landscape*/
-@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
-.
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px)
+
+  {
+    h1 {
+      margin-top: 100px;
+    }
+    .como {
+    list-style: none;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "x"
+    "y"
+    "z";
+  }
+
+  .como li {
+      background-color: black;
+      border: 0.5px solid #ccc;
+      border-radius: 5px;
+  }
+
+  .comoleft {
+  grid-area: x;
+  }
+
+  .comoright1 {
+       grid-area: y;
+  }
+
+  .comoright2 {
+    grid-area: z;
+  }
+
+
+  .photopackage {
+    align-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-auto-rows:auto;
+    grid-template-areas:
+              "a"
+              "b"
+              "c"
+              "d"
+              "e"
+              "f"
+              "g"
+              "h"
+              "i";
+        }
+
+        .photopackage1{
+            background-color: black;
+          grid-area: a;
+        }
+
+        .photopackage2{
+            background-color: black;
+            grid-area: b;
+        }
+
+        .photopackage3 {
+            background-color: black;
+            grid-area: c;
+        }
+
+        .photopackage4 {
+            background-color: black;
+          grid-area: d;
+        }
+
+
+        .photopackage5 {
+            background-color: black;
+          grid-area: e;
+        }
+
+        .photopackage6 {
+            background-color: black;
+            grid-area: f;
+        }
+
+        .photopackage7 {
+            background-color: black;
+            grid-area: g;
+        }
+
+        .photopackage8 {
+            background-color: black;
+          grid-area: h;
+        }
+
+        .photopackage9 {
+            background-color: black;
+          grid-area: i;
+        }
+
+      .text {
+        font-size: 3em;
+      }
+
+.map {
+  width:100% auto;
+  padding: 0;
 }
 
+.categories {
+  display: flex;
+}
 
-/* Ipad Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+.catecolumn {
+  flex: 100%;
+}
 
+.contact {
+  display: block;
+  padding-top: 2em;
+}
+
+/* .contactcolumn {
+  padding: 0 5%;
+  flex: 40%;
+} */
 
 }
