@@ -8,8 +8,12 @@
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,400i,700,700i|Signika|Viga|Work+Sans:100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/navStyle.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="jiangnan.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     function myFunction() {
@@ -20,16 +24,14 @@
         x.className = "topnav";
       }
     }
+</script>
 
-    $(document).ready(function(){
-  $(".selected").click(function(){
-    $("#test1").text("Hello world!");
-  });
-});
-  </script>
-</head>
+  </head>
+
+
 
 <body>
+
 
   <div class="topnav" id="myTopnav">
     <label>Gallery</label>
@@ -41,64 +43,73 @@
     </a>
   </div>
 
-  <figure class='full-width'>
-      <img src="img/jiangnan3.jpeg"/>
-      <figcaption>Xinjiang, a vast land located in the northwest of China</figcaption>
-    </figure>
 
+    <!-- Container for the image gallery -->
+    <div class="container2">
 
+      <div class="mySlides">
+        <div class="numbertext">1/6</div>
+          <img src="img/jiangnan1.jpeg" width="400px" height="200px" >
+      </div>
 
-  <div class="container">
-    <div id="header">
-      <h1> Filling the Gap</h1>
+      <div class="mySlides">
+        <div class="numbertext">2/6</div>
+          <img src="img/jiangnan2.jpeg" width="400px" height="200px" >
+      </div>
 
+      <div class="mySlides">
+        <div class="numbertext">3/6</div>
+          <img src="img/jiangnan3.jpeg" width="400px" height="200px">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4/6</div>
+          <img src="img/jiangnan4.jpeg" width="400px" height="200px">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5/6</div>
+          <img src="img/jiangnan5.jpg" width="400px" height="200px">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="img/jiangnan6.jpeg" width="400px" height="200px">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+ <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/jiangnan1.jpeg" style="width:120px" style="height:100px" onclick="currentSlide(1)" alt="The Woods">
     </div>
- <div class="jiangnanstory">
-      <h2> Jiangnan Story</h2>
-      <p>Xinjiang, a vast land located in the northwest of China, is where I was born. It used to known as the Western Regions for hundreds and thousands of years, and is now a place where dozens of ethnic groups inhabit. 'Jiang Nan’ in Mandarin means the south of Xinjiang, the area where this series of photographs were taken.
-</P>
+    <div class="column">
+      <img class="demo cursor" src="img/jiangnan2.jpeg" style="width:120px" style="height:100px" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/jiangnan3.jpeg" style="width:120px" style="height:100px" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/jiangnan4.jpeg" style="width:120px" style="height:100px" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/jiangnan5.jpg" style="width:120px" style="height:100px" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/jiangnan6.jpeg" style="width:120px" style="height:100px" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
 
-      <div class="jiangnan1">
-        <p> <img src="img/jiangnan1.jpeg"/></p>
-
-        <p> April_2017. Khotan Xin Jiang. Boyuan Zhang/Alexia Foundation</p>
-      </div>
-<p>A stretch of more than 2000 km of the Tarim River, her source begins with the ice mountain in the west. After the branches converged, she runs across the great Taklimakan Desert from west to east, flowing into the Taitema Lake. She is the source of thriving lives in Southern Xinjiang, animating different groups of people and their civilisations generation after generation.
-</P>
-      <div class="jiangnan2">
-        <p> <img src="img/jiangnan2.jpeg"/></p>
-        <p> April 2017. Khotan Xin Jiang. The headwork of Qaraqash Deryasi. Boyuan Zhang/Alexia Foundation</p>
-      </div>
-
-
-
-          <div class="jiangnan3">
-            <p> <img src="img/jiangnan3.jpeg"/></p>
-            <p> August_2017. Khotan Xin Jiang. Uyghur senior cooking. Boyuan Zhang/Alexia Foundation</p>
-            <p>
-              In my own case, I was born and raised in Xinjiang, but I am also a descendant of the Han ‘immigrants’. Many of my peers, most of whom are regarded as the Post-90s Generation, are the third generation of their family in Xinjiang, with their grandparents’ first settlement due to political and economic reasons. We live in cities, yet long for the distant. The legendary Silk Road, the great explores of Sven Hedding and Marc Aurel Stein, as well as the thousands of people who headed to the south, could all find their roots in the curiosity about this place and the desire for adventures. I want to make this place my homeland, and what I believe what I can do is to engrave the scenes and the faces on the films as well as in my heart.
-            </P>
-            </div>
-
-          <div class="jiangnan4">
-            <p> <img src="img/jiangnan4.jpeg" /></p>
-            <p> August_2017. Khotan Xin Jiang. Uyghur wedding. Boyuan Zhang/Alexia Foundation</p>
-           </div>
-<p>However, since the Lop people, the Daolang people, and the Keliya people were “discovered” by Sven Hedding in the 1890s, they have gradually abandoned their old fisheries lifestyle. The herald of modern life further blurred the boundaries between them and the Uyghur as well. Uigur and Mandarin spread swiftly because they are indispensable for these people to make a living in cities and towns. Although those villages they used to resident have been able to access electricity, it is the asphalt road that truly bear stories of moving and travelling, of the pursuit for a better life.
-</p>
-
-          <div class="jiangnan5">
-            <p> <img src="img/jiangnan5.jpg"/></p>
-            <p> August_2017. Khotan Xin Jiang. A wreckage of Santana. Boyuan Zhang/Alexia Foundation</p>
-          </div>
-
-          <div class="jiangnan6">
-            <p> <img src="img/jiangnan6.jpeg"/></p>
-            <p> August_2017. Khotan Xin Jiang. The day before the Corban Festival. Boyuan Zhang/Alexia Foundation</p>
-          </div>
 </div>
 
-
+<div class="container">
 <div class="botnav">
   <div class="botcolumn">
     <h3>Sections</h3>
@@ -115,13 +126,13 @@
    </div>
   </div>
 </div>
-<div id="footer">
 
+
+<div id="footer">
 <div class="footertext">
   <p> Copyright &copy; 2019 <a href="columbiamissourian.com">The Columbia Missourian</a>, 221 South 8th Street Columbia, MO | <a href="">Term of Use</a> | <a href="">Privacy Policy</a></p>
 </div>
 </div>
-
 </div>
 
 </body>

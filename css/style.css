@@ -348,7 +348,7 @@ img{
 
 .photopackage8 {
     background-color: black;
-  grid-area: h;
+    grid-area: h;
 }
 
 .photopackage9 {
@@ -356,62 +356,105 @@ img{
   grid-area: i;
 }
 
+
 /*jiangnan*/
-
-.full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+* {
+  box-sizing: border-box;
 }
 
-.jiangnanstory {
-  align-items: flex-end;
-  margin: 10;
-  padding: 0;
-  border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-template-areas:
-            "a a a"
-            ". b b"
-            ". b b"
-            "f f f"
-            ". d d"
-            "e e ."
-            "c c c"
-          ;}
-
-.jiangnan1{
-  grid-area: a;
-}
-
-.jiangnan2{
-    grid-area: b;
-}
-
-.jiangnan3 {
-    grid-area: c;
-}
-
-.jiangnan4 {
-  grid-area: d;
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  height: 50%;
+  width: 50%;
+  padding-top: 50px;
+  margin-left: 8%;
+  margin-right: 10%;
+  align-content: center;
 }
 
 
-.jiangnan5 {
-  grid-area: e;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.jiangnan6 {
-    grid-area: f;
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
-/*
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 120px;
+  height: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
 .protest {
   align-items: stretch;
   margin: 10;
