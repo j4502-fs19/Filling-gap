@@ -1,5 +1,4 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+
 
 
 // Thumbnail image controls
